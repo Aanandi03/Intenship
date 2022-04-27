@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker stop AanandiBlog
+docker rm AanandiBlog

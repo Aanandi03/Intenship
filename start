@@ -1,0 +1,5 @@
+#!/bin/bash
+
+AppHost=${1:-"127.0.0.1"}
+
+docker run -d -e APP_HOST=${AppHost} --name AanandiBlog -p 8000:8000 --restart unless-stopped aanandi:1
