@@ -1,4 +1,3 @@
 #!/bin/bash
 
-docker system prune
 docker build -t aanandi:1 .
