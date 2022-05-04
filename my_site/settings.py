@@ -28,7 +28,13 @@ DEBUG = getenv("IS_DEVELOPMENT", True)
 
 ALLOWED_HOSTS = [
     getenv("APP_HOST"),
-    "127.0.0.1"
+    "127.0.0.1",
+    "aanandi.rajpara.io"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://aanandi.rajpara.io',
+    'http://127.0.0.1',
 ]
 
 

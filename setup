@@ -1,0 +1,8 @@
+#!/bin/bash
+
+apt update
+apt -y upgrade
+apt install -y python3-pip
+pip3 install -r requirements.txt
+python3 manage.py migrate
+python3 manage.py createsuperuser
